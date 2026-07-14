@@ -24,6 +24,84 @@ body.subpage { background: #f5fbff; }
 a { color: inherit; }
 img { max-width: 100%; display: block; }
 
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-content {
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  padding: 2rem;
+  border-radius: 16px;
+  background: white;
+  text-align: center;
+}
+
+.splash-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border: 0;
+  background: transparent;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.splash.is-hidden {
+  display: none;
+}
+
+#startBtn {
+  background: #006EB6;
+  color: white;
+  border: 4px solid white;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  box-shadow:
+    0 0 0 4px #000,
+    0 8px 0 #000,
+    0 12px 24px rgba(0, 0, 0, 0.35);
+  text-transform: uppercase;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+#startBtn:hover {
+  background: #4FA3DB;
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 0 4px #000,
+    0 11px 0 #000,
+    0 16px 28px rgba(0, 0, 0, 0.4);
+}
+
+#startBtn:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 0 0 4px #000,
+    0 4px 0 #000,
+    0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+#startBtn:focus-visible {
+  outline: 4px solid #ffffff;
+  outline-offset: 5px;
+}
+
 .site-header {
   min-height: 100vh;
   color: var(--white);
@@ -150,7 +228,7 @@ figcaption { padding: 14px 4px 0; color: #6c7a89; font-weight: 700; }
 
 @media (max-width: 880px) {
   .nav { align-items: flex-start; }
-  .nav-toggle { display: inline-flex; min-height: 42px; padding: 10px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.08); color: #fff; font-weight: 850; }
+  .nav-toggle { display: inline-flex; min-height: 42px; padding: 12px 14px 10px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.08); color: #fff; font-weight: 850; }
   .nav-links { display: none; position: absolute; right: 0; top: 78px; flex-direction: column; align-items: flex-start; width: min(280px, 80vw); padding: 18px; border-radius: 20px; background: #0b1f35; box-shadow: var(--shadow); }
   .nav-links.open, .nav-links.always-visible { display: flex; }
   .nav-links.always-visible { position: static; width: auto; background: transparent; box-shadow: none; flex-direction: row; padding: 0; }
