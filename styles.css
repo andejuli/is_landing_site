@@ -245,7 +245,7 @@ figcaption { padding: 14px 4px 0; color: #6c7a89; font-weight: 700; }
   .hero-title {grid-column: 1/2;}
   .brand-mark {display: none;}
   #byuilogo {max-width: 90px;}
-  .brand-text { font-size: 1.3rem; letter-spacing: .1em;}
+  .brand-text { font-size: 1rem; letter-spacing: .1em;}
 }
 
 @media print {
