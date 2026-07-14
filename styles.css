@@ -47,16 +47,21 @@ img { max-width: 100%; display: block; }
 
 .splash-close {
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
+  top: 0.2rem;
+  right: 0.2rem;
   border: 0;
   background: transparent;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   cursor: pointer;
+  color: #256bbf;
 }
 
 .splash.is-hidden {
   display: none;
+}
+
+#hoodie {
+  max-width: 100%;
 }
 
 #startBtn {
@@ -64,7 +69,7 @@ img { max-width: 100%; display: block; }
   color: white;
   border: 4px solid white;
   border-radius: 999px;
-  padding: 14px 28px;
+  padding: 10px 24px;
   font-size: 1.1rem;
   font-weight: 800;
   letter-spacing: 0.4px;
