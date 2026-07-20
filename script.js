@@ -24,9 +24,10 @@ const splash = document.getElementById("splash");
 const closeBtn = document.querySelector(".splash-close");
 const startBtn = document.getElementById("startBtn");
 
-if (localStorage.getItem("splashClosed") === "true") {
-  splash.classList.add("is-hidden");
-}
+// to show the splash screen only once
+// if (localStorage.getItem("splashClosed") === "true") {
+//   splash.classList.add("is-hidden");
+// }
 
 function closeSplash() {
   splash.classList.add("is-hidden");
