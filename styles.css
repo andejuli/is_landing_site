@@ -68,6 +68,10 @@ img { max-width: 100%; display: block; }
   line-height: 0;
 }
 
+ol li {
+  text-align: left;
+}
+
 #footnote {
   font-size: 12px;
 }
