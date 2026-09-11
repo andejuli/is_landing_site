@@ -71,6 +71,10 @@ img { max-width: 100%; display: block; }
 ol li {
   text-align: left;
 }
+#outer {
+  width: 100%;
+  background-color: var(--ink);
+}
 
 #footnote {
   font-size: 12px;
