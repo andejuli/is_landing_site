@@ -109,6 +109,7 @@ img {
 ol li {
   text-align: left;
 }
+
 #outer {
   width: 100%;
   background-color: var(--ink);
